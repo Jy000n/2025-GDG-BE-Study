@@ -28,12 +28,12 @@ HTTP : 웹에서 데이터를 주고받는 규칙(프로토콜)
 
 - http://www.example.com/user/1/nickname  
   프로토콜(scheme) / 서버주소(domain) / 서버 내 데이터 위치(path)
-- **Path Parameter**
+- **Path Parameter**  
   http://www.example.com/user/{user_id}/nickname  
   { } 사용
 - **Query String**  
   http://~.com/post/search?page-1&keyword=hello  
-  path 뒤 ?~ (key-value 형식)
+  path 뒤 ? (key-value 형식)
 
 ### HTTP 헤더 & 바디
 
