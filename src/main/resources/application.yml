@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: todo-api
+
+  datasource:              # ??? ??? ??? url
+    url: jdbc:h2:mem:todo;MODE=MYSQL
+
+  h2:                      # ??? ?? ??? (??? false)
+    console:
+      enabled: true
+
+  jpa:
+    show-sql: true         # JPA? ??? SQL ??
+    properties:
+      hibernate:
+        format_sql: true   # ???? ??
+        dialect: org.hibernate.dialect.MySQL8Dialect    #  SQL ?? ?, MYSQL 8 ?? ??

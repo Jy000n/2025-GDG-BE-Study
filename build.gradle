@@ -36,6 +36,11 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	// H2 DB
+	implementation 'com.h2database:h2'
+    // MYSQL 드라이버 의존성
+    runtimeOnly 'mysql:mysql-connector-java'
 }
 
 tasks.named('test') {
