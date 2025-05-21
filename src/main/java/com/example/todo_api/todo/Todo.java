@@ -39,4 +39,9 @@ public class Todo {
 //        this.isChecked = isChecked;
 //        this.member = member;
 //    }
+
+    // 할 일 수정 (private이라 변경 X -> public하게 접근해서 바꿈)
+    public void updateContent(String newContent){
+        this.content = newContent;
+    }
 }

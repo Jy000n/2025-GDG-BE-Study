@@ -1,4 +1,4 @@
-package com.example.todo_api.Friend;
+package com.example.todo_api.friend;
 
 import com.example.todo_api.member.Member;
 import jakarta.persistence.*;
@@ -29,4 +29,14 @@ public class Friend {
         this.followingMember = followingMember;
         this.followerMember = followerMember;
     }
+
+    // 팔로잉 유저 수정
+    public void updateFollowingMember(Member newFollowingMember){
+        this.followingMember = newFollowingMember;
+    }
+    // 팔로워 유저 수정
+    public void updateFollowerMember(Member newFollowerMember){
+        this.followerMember = newFollowerMember;
+    }
+
 }
